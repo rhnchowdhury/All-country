@@ -32,7 +32,33 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.country {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: coral;
+}
+
+@media screen and (max-width: 576px) {
+  .country {
+    display: grid;
+    /* grid-template-columns: repeat(1, 300px); */
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+  }
+
+  h1 {
+    text-align: center;
+    color: coral;
   }
 }
